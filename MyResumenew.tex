@@ -1,0 +1,250 @@
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{pifont}
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Pushkar Sudhir Baviskar} \\[7.5pt]
+\href{https://github.com/Pushkar745}{\raisebox{-0.05\height}\faGithub\ Pushkar745} \ $|$ \ 
+\href{https://www.linkedin.com/in/pushkarbaviskar/}{\raisebox{-0.05\height}\faLinkedin\ pushkarbaviskar} \ $|$ \ 
+\href{https://pushkarbaviskar.azurewebsites.net/}{\raisebox{-0.05\height}\faGlobe \ pushkarbaviskar.azurewebsites.net} \ $|$ \ 
+\href{mailto:b.pushkar745@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ b.pushkar745@gmail.com} \ $|$ \ 
+\href{tel:+91 8983374825}{\raisebox{-0.05\height}\faMobile \ +91 8983374825} \ $|$ \ 
+  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+I am experienced in software and web development in agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.AI Enthusiastic!
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2015-2018 & Master Of Computer Application \textbf{IBSAR Institute of Management Studies Mumbai University} \hfill \normalsize (GGPA:7.22 ) \\
+
+2012-2015 & BSc(Information Technology) \textbf{KGKC-University of  Mumbai} \hfill (GGPA:6.0) \\ 
+
+2012 & Class 12th HSC Board \hfill  (47.54\%) \\
+
+2010 & Class 10th SSC Board \hfill  (61.27 \%) \\
+\end{tabularx}
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Software Developer (Designite)} & \hfill Oct 15, 2018 to Nov 30, 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{I worked on a software product which is responsible for the re-factoring software design smell.The product is about detecting code smell in existing code.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{JR Asp.Net Developer(Maxgen Technologies)} & \hfill February 2018 - July 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{I worked on Project which is related to E-Commerce An E-Mall is a virtual store on the Internet where customers can browse the catalogue and select products of interest.The selected items may be collected in a shopping cart.}
+\end{tabularx}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{E-Mall} & \hfill{(Feb 2018 - Jul 2018)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{An E-Mall is a virtual store on the Internet where customers can browse the catalogue and select products of interest.The selected items may be collected in a shopping cart.}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Real time face recognition} & \hfill{(September 2017)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A real-time face recognition system is capable of identifying or verifying a person from a video frame.}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{IT Source} & \hfill{(Jan 2015 - May 2016)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{IT source is a partner with expert computer support and strategic long term thinking for IT related studies .IT source provide adorable solution for respective languages such as C++, HTML, Java, and php etc.}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Line follower robot} & \hfill{(Oct 2016 - Nov 2016)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A line follower robot follows a track or path drawn by black line and feedback loop is the main part in controlling the robot. This project consists of a Robot which follows a black line drawn on a plain white surface.}  \\
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	Technical Skills
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{enumerate}
+    \item Programming and Scripting Languages
+    \begin{enumerate}
+        \item [\ding{226}] C, C++, Java, JavaScript, Python, HTML, 
+        CSS , PHP , C\#
+    \end{enumerate}
+    \item  Operating Systems
+    \begin{enumerate}
+        \item[\ding{226}] Windows, Linux
+    \end{enumerate}
+    \item Tools
+    \begin{enumerate}
+        \item [\ding{226}] NetBeans ,Visual Studio,Visual Studio Code
+    \end{enumerate}
+    \item Database Tools
+    \begin{enumerate}
+        \item [\ding{226}] Oracle, MySQL
+    \end{enumerate}
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+%	Award
+%----------------------------------------------------------------------------------------
+\section{Award}
+\begin{itemize}
+    \item[\ding{51}]\textbf {Certificate of Excellence} Secured 1st 
+    rank in 2nd Year MCA Academics.
+    \item[\ding{51}]\textbf {Appreciation Letter}
+	Issued by Wingfotech(UTKRAANTI-2017 IN Association with Chemclave 	- IIT Madras..
+\end{itemize}
+\section{Certification}
+\begin{enumerate}
+    \item Intro to Python for Data Science Course \textbf{DataCamp}
+    \item Responsive Web Design \textbf{Freecodecamp}
+   
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{WannaCry ransomware: A case study in Indian perspective} &  \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{This paper is an exhaustive study of WannaCry ransomware attack and its affect India, explain the methods how to prevent such attacks in the Indian context and highlighted areas where the loopholes are!}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Activities
+%----------------------------------------------------------------------------------------
+\section{Activities}
+\begin{itemize}
+    \item[\ding{51}]Twice Participated in "Aviskkar Research
+    Convention "Workshop.
+    \item[\ding{51}]Participated in NATIONALWORKSHOP on " Latex for 
+    Technical Documentation NIT Goa.
+    \item[\ding{51}] Participated in ANDROID WORKSHOP
+    Conducted by Entrepreneurship Development Cell (eDC), IIT Delhi.
+    \item[\ding{51}] Participated in Seminar Workshop on Quantitative 
+    and Qualitative Data Analysis conducted by Mumbai university.
+    \item[\ding{51}] Participated in the Open Day Hack at Openness 
+    Days by Microsoft.
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	Positions and Responsibility
+%----------------------------------------------------------------------------------------
+\section{Positions and Responsibility}
+\begin{enumerate}
+    \item Microsoft Student partner – (Microsoft)
+    \item Campus Ambassador Entrepreneurship Cell, IIT Kanpur
+    \item Campus Ambassador Entrepreneurship Cell IIT Bombay
+    \item Student Brand ambassadors at Parentlane
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+%	Hobbies
+%----------------------------------------------------------------------------------------
+\section{Hobbies}
+\begin{itemize}
+    \item[\ding{69}]Photography , Reading Books , Playing chess.
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	Personal details
+%----------------------------------------------------------------------------------------
+\section{Personal details}
+\begin{minipage}[ht]{0.64\textwidth}  
+\faAddressCard \ Address :Rajendraguru Nagar, Anand Dighe Street Neral, Dist.Raigad Pin 410101 \\ 
+
+%\faBirthdayCake \ Date Of Birth : 28 November 1994 \\
+
+\faTwitter\ Twitter \href{https://twitter.com/hackepushkar} {hackepushkar} \\
+
+\faBlogger \ Blog \href{https://www.pushkar745.blogspot.com/} {pushkar745.blogspot.com}  
+\end{minipage} 
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
